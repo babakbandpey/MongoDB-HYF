@@ -21,3 +21,12 @@ ManogoDB Lesson 1 for Hack Your Future ***Class12***
     ]
 }
 ``` 
+
+## There are no tables vs. RDBMS which has a static design 
+
+## installing MongoDB
+
+[https://www.mongodb.com/download-center/community] (https://www.mongodb.com/download-center/community)
+
+Select the zip version
+
