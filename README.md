@@ -3,7 +3,7 @@ ManogoDB Lesson 1 for Hack Your Future ***Class12***
 
 ## MongoDB not RDBMS
 
-## Not a Transactional DB
+## Not a Transactional DB (You can not be sure that the data is not changed from other sources while you update it)
 
 ## Data is saved in JSON format but in Binary not Text, BSON (Bee-SON)
 
@@ -26,11 +26,26 @@ ManogoDB Lesson 1 for Hack Your Future ***Class12***
 
 ## installing MongoDB
 
-[https://www.mongodb.com/download-center/community] (https://www.mongodb.com/download-center/community)
+[Download] (https://www.mongodb.com/download-center/community)
 
 1. Select the zip version
 2. Unpack to c:\MongoDB
 3. Open a command prompt
-4. Run c:\MongoDb\bin\mongod.exe
+4. Starting the server Run c:\MongoDb\bin\mongod.exe
 5. Open a command prompt
 6. Run c:\MongoDB\bin\mongo.exe
+
+## Basic commands
+
+Table 2-2: Basic Commands within the MongoDB Shell
+Open table as spreadsheet
+
+Command             Function
+
+show dbs            Shows the names of the available databases.
+
+show collections    Shows the collections in the current database.
+
+show users          Shows the users in the current database.
+
+use <db name>       Sets the current database to <db name>.
