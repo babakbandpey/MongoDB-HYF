@@ -28,5 +28,9 @@ ManogoDB Lesson 1 for Hack Your Future ***Class12***
 
 [https://www.mongodb.com/download-center/community] (https://www.mongodb.com/download-center/community)
 
-Select the zip version
-
+1. Select the zip version
+2. Unpack to c:\MongoDB
+3. Open a command prompt
+4. Run c:\MongoDb\bin\mongod.exe
+5. Open a command prompt
+6. Run c:\MongoDB\bin\mongo.exe
