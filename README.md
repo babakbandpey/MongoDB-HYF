@@ -41,7 +41,7 @@ Table 2-2: Basic Commands within the MongoDB Shell
 Open table as spreadsheet
 
 |Command|Function|
-| ------------- |-------------:|
+| ------------- |-------------|
 |show dbs|Shows the names of the available databases.|
 |show collections|Shows the collections in the current database.|
 |show users|Shows the users in the current database.|
