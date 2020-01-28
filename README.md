@@ -61,7 +61,7 @@ Open table as spreadsheet
 - Object: This datatype is used for embedded documents.
 - Null: This datatype is used for a Null value.
 - Symbol: This datatype is used identically to a string; however, it's generally reserved for languages that use a specific symbol type.
-- Date *** * ***: This datatype is used to store the current date or time in Unix time format (POSIX time).
+- Date *: This datatype is used to store the current date or time in Unix time format (POSIX time).
 - Object ID *: This datatype is used to store the document's ID.
 - Binary data *: This datatype is used to store binary data.
 - Regular expression *: This datatype is used for regular expressions. All options are represented by specific characters provided in alphabetical order. You will learn more about regular expressions in Chapter 4.
