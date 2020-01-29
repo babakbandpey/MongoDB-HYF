@@ -46,7 +46,7 @@ Open table as spreadsheet
 |show dbs|Shows the names of the available databases.|
 |show collections|Shows the collections in the current database.|
 |show users|Shows the users in the current database.|
-|use "db name"|Sets the current database to <db name>.|
+|use "db name"|Sets the current database to "db name" or creates it.|
     
 ***collection is a commonly used term in MongoDB. You can think of a collection as a container that stores your documents (that is, your data)***
 
