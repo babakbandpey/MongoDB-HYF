@@ -31,9 +31,10 @@ ManogoDB Lesson 1 for Hack Your Future ***Class12***
 1. Select the zip version
 2. Unpack to c:\MongoDB
 3. Open a command prompt
-4. Starting the server Run c:\MongoDb\bin\mongod.exe
-5. Open a command prompt
-6. Run c:\MongoDB\bin\mongo.exe
+4. Create c:\data\db with mkdir c:\data, mkdir c:\data\db
+5. Starting the server Run c:\MongoDb\bin\mongod.exe
+6. Open a command prompt
+7. Run c:\MongoDB\bin\mongo.exe
 
 ## Basic commands
 
