@@ -69,3 +69,42 @@ Open table as spreadsheet
 
 The ***asterisks*** mean that the last five datatypes (date, object ID, binary data, regex, and JavaScript code) are non-JSON types; specifically, they are special datatypes that BSON allows you to use. In Chapter 4, you will learn how to identify your datatypes by using the $type operator.
 
+In the relational approach, your data structure might look something like this:
+
+```
+|_media
+    |_cds
+        |_id, artist, title, genre, releasedate
+    |_ cd_tracklists
+        |_cd_id, songtitle, length
+```
+In the nonrelational approach, your data structure might look something like this:
+
+```
+|_media
+    |_items
+        |_<document>
+```
+In the nonrelational approach, the document might look something like the following:
+
+```
+{
+    "Type": "CD",
+    "Artist": "Nirvana",
+    "Title": "Nevermind",
+    "Genre": "Grunge",
+    "Releasedate": "1991.09.24",
+    "Tracklist": [
+        {
+        "Track" : "1",
+        "Title" : "Smells Like Teen Spirit",
+        "Length" : "5:02"
+        },
+        {
+        "Track" : "2",
+        "Title" : "In Bloom",
+        "Length" : "4:15"
+        }
+    ]
+}
+```
