@@ -116,6 +116,4 @@ Every object within the MongoDB database contains a unique identifier to disting
 
 The ***_id*** key is the first attribute added in each new document you create. This remains true even if you do not tell MongoDB to create the key. For example, none of the code in the preceding examples used the ***_id*** key. Nevertheless, MongoDB created an _id key for you automatically in each document. It did so because _id key is a mandatory element for each document in the collection.
 
-The ***_id*** key consists of 12 bytes (12*8=96 bits, 2^12=4096 combinations), it is almost Unique. 4-byte timestamp (seconds since epoch, or January 1st, 1970), a 3-byte machine ID, a 2-byte process ID, and a 3-byte counter
-
-
+The ***_id*** key consists of 12 bytes (12*8=96 bits, 2^96=7.9228163e+28 combinations), it is almost Unique. 4-byte timestamp (seconds since epoch, or January 1st, 1970), a 3-byte machine ID, a 2-byte process ID, and a 3-byte counter
