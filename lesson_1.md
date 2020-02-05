@@ -113,6 +113,11 @@ In the above case the condition `teachers` must match both in the **number** of 
     db.classes.find({'teachers.age': {$lte:30}}).pretty() //less than or equal to
     db.classes.find({'teachers.age': {$gte:30}}).pretty() //greater than or equal to
     db.classes.find({'teachers.age': 30}).pretty() //equal to
+    db.classes.find({'teachers.age': {$lt: 30, $gt: 20}}).pretty() //Interval
+    
+##### Querying a Nested document based on the values of multiple attributes
+
+    db.classes.find({'teachers.age': 30, 'students.age': 20}}).pretty()
 
 #### Manually Traversing the Documents in a Collection
 
@@ -126,10 +131,18 @@ In the above case the condition `teachers` must match both in the **number** of 
 	    printjson(myCursor.next())
 	}
 	//or
-	var myCursor =  db.classes.find()
-	myCursor.forEach(printjson)
+	var myCursor =  db.classes.find();
+	myCursor.forEach(printjson);
+	
+#### Query for Null or Missing Fields
+ 
 
+    db.classes.insert({"name": null})
+     
+{$type: 10} is BSON equivalent of binary null which is used in the queries
 
-
-
-
+    // Finding documents with attributes equal null
+    db.classes.find({name: {$type: 10}})
+    
+    // Finding documents with missing attributes
+    db.classes.find({teachers: {$exists: false}})
